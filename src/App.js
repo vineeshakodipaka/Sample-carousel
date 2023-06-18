@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
+import Navbar from './components/Navbar';
+import Navbar1 from './components/Navbar1';
+import { Carousel } from 'bootstrap';
+import MyCarousel from './components/MyCarousel';
+import ImageGrid from './components/ImageGrid';
+import Section1 from './components/Section1';
+import About from './components/About';
+import Section2 from './components/Section2';
+import Section3 from './components/Section3';
+import Section4 from './components/Section4';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   {/* <Navbar/> */}
+   <Navbar1/>
+   <MyCarousel/>
+   <ImageGrid/>
+   
+   <About/>
+   <Section1/>
+   <Section2/>
+   <Section3/>
+
+   </>
+     
+ 
   );
 }
 
